@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="author" content="Jenny Nguyen">
         <title>Jenny Nguyen's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images\favicon-happy.png">
         <style>
             .myName {
                 background-color: lightblue;
@@ -15,44 +17,72 @@
             <h1>Jenny Nguyen</h1>
         </div>
         </header>
-
-    <!-- <div class="myDiv">
-        <h2>This is a heading h2 in a div element</h2>
-        <p>this is a <span style="color red; font-weight:bold";>some red text</span> in a div element. </p>
-    </div> -->
     <nav>
         <a href="#aboutMe">About Me</a>
         <a href="professional.html">Professional</a>
         <a href="personal.html">Personal</a>
     </nav>
 
+    <hr>
+
+    <main>
     <section>
         <div>
-        <h2 id ="aboutMe">About Me</h2>
+        <h2 id ="aboutMe"><strong>About Me</strong></h2>
         <p>If you keep reading, you will learn more about my professional and personal life. 
             <br> Are ya ready?
         <br> Well here's a list of some things you'll see. </p>
         <ul>
-            <li>Coding</li>
+            <li>Work</li>
             <li>Games</li>
             <li>Food</li>
         </ul>
         <p>Since you made it this far.</p>
         <figure>
             <img src="images\cute puppy.jpg" style="width:50%">
-            <figcaption>Here is a cute puppy.</figcaption>
+            <figcaption>Here is a <em>cute</em> puppy.</figcaption>
         </figure>
     </div>
     </section>
     
+    <hr>
+
     <section>
         <h2>Learn More</h2>
     </section>
 
+    <hr>
+
     <section>
     <h2>Contact Me</h2>
-    
+    <p>Select what you want to talk about.</p>
+    <form action="/action_page.php" method="get">
+        <input type="radio" id="work" name="subject" value="Work">
+        <label for="work">Work</label><br>
+        <input type="radio" id="games" name="subject" value="Games">
+        <label for="games">Games</label><br>
+        <input type="radio" id="food" name="subject" value="Food">
+        <label for="food">Food</label><br><br>
+        <textarea id="form_body" name="form_body" rows="4" cols="50">Say what you want here.</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
     </section>
+</main>
 
+<hr>
+
+<section>
+    <h6>This is a experiment section. This will be pruned later on. </h6>
+    <pre>This
+        is
+        me
+        testing the pre html tag.
+    </pre>
+</section>
+
+<hr>
+
+    <footer>Author: Jenny Nguyen</footer>
     </body>
 </html>
